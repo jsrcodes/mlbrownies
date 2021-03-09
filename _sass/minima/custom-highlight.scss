@@ -29,11 +29,15 @@ $dt-green-light: rgb(172, 229, 145);
 }
 
 .language-python + .language-plaintext code {
-  background-color: white !important;
+  // background-color: rgb(63, 59, 59) !important;
+  // color: $dt-gray-light;
+  background-color: $dt-code-cell-background !important;
   color: $dt-gray-light;
 }
 .language-python + .language-plaintext pre  {
-  background-color: white !important;
+  // background-color: white !important;
+  // color: $dt-gray-light;
+  background-color: $dt-code-cell-background !important;
   color: $dt-gray-light;
 }
 
