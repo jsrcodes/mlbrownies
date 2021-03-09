@@ -476,9 +476,9 @@ li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
 
-.language-python + .language-plaintext code { background-color: white !important; color: #f8f8f2; }
+.language-python + .language-plaintext code { background-color: #323443 !important; color: #f8f8f2; }
 
-.language-python + .language-plaintext pre { background-color: white !important; color: #f8f8f2; }
+.language-python + .language-plaintext pre { background-color: #323443 !important; color: #f8f8f2; }
 
 .input_area pre, .input_area div { margin-bottom: 2rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #323443 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: DejaVu Sans Mono, monospace; border-radius: 5px; font-size: 100%; }
 
