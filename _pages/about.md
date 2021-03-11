@@ -3,9 +3,4 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+I am quant developer transitioned into a Machine Learning engineer! Over past 8 years, I coded using C++ (my favorite!), Java, Python, Javascript (react.js/node.js stack) primarily in investment banking domain. Lately, I have developed great interest in NLP, Computer vision and working on some side projects in those areas. I am amazed by the impact of Deep Learning especially in the fields such as Health care, Autonomous driving.
