@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Tensorflow Freq",
-            "content": "tokenizer = keras.preprocessing.text.Tokenizer( filters=&#39;&#39;, oov_token=&#39;&lt;oov&gt;&#39; ) tokenizer.fit_on_texts(text) tokenized_tensor = tokenizer.text_to_sequences(text) # Apply padding so that all sequences are of same length. #The length of the largest string is considered for padding tokenized_tensor = keras.preprocessing.sequence.pad_sequences( tensor, padding=&#39;post&#39; ) .",
-            "url": "https://jsrcodes.github.io/mlidiot/2021/03/10/tensorflow-freq.html",
-            "relUrl": "/2021/03/10/tensorflow-freq.html",
+            "title": "Things I frequently use in Tensorflow",
+            "content": "Tensorflow’s most powerful tools for Deep Learning . tokenizer = keras.preprocessing.text.Tokenizer( filters=&#39;&#39;, oov_token=&#39;&lt;oov&gt;&#39; ) tokenizer.fit_on_texts(text) tokenized_tensor = tokenizer.text_to_sequences(text) # Apply padding so that all sequences are of same length. #The length of the largest string is considered for padding tokenized_tensor = keras.preprocessing.sequence.pad_sequences( tensor, padding=&#39;post&#39; ) .",
+            "url": "https://jsrcodes.github.io/mlidiot/python/2021/03/10/tensorflow-freq.html",
+            "relUrl": "/python/2021/03/10/tensorflow-freq.html",
             "date": " • Mar 10, 2021"
         }
         
