@@ -1,1 +1,1 @@
-Sitemap: https://jayasimhareddy.github.io/mlidiot/sitemap.xml
+Sitemap: https://jsrcodes.github.io/mlidiot/sitemap.xml
