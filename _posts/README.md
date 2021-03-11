@@ -1,3 +1,3 @@
-https://jsrcodes.github.io/mlidiot/
+https://jsrcodes.github.io/mlbrownies/
 
 # Machine Learning Idiot
