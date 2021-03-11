@@ -4,7 +4,7 @@
         "post0": {
             "title": "Things I frequently use in Tensorflow",
             "content": "Tensorflow’s most powerful tools for Deep Learning . tokenizer = keras.preprocessing.text.Tokenizer( filters=&#39;&#39;, oov_token=&#39;&lt;oov&gt;&#39; ) tokenizer.fit_on_texts(text) tokenized_tensor = tokenizer.text_to_sequences(text) # Apply padding so that all sequences are of same length. #The length of the largest string is considered for padding tokenized_tensor = keras.preprocessing.sequence.pad_sequences( tensor, padding=&#39;post&#39; ) .",
-            "url": "https://jsrcodes.github.io/mlidiot/python/2021/03/10/tensorflow-freq.html",
+            "url": "https://jsrcodes.github.io/mlbrownies/python/2021/03/10/tensorflow-freq.html",
             "relUrl": "/python/2021/03/10/tensorflow-freq.html",
             "date": " • Mar 10, 2021"
         }
@@ -15,7 +15,7 @@
         ,"post1": {
             "title": "Hello world! for Regex",
             "content": "Commonly used regex for data preprocessing . Adding a space before a punctuation if it is not already spaced. | import re ex_str = &#39;This house is very old.&#39; ex_str = re.sub(r&quot;([?.!,])&quot;, r&quot; 1 &quot;, ex_str) ex_str = re.sub(r&#39;[&quot; &quot;]+&#39;, &quot; &quot;, ex_str) ex_str = re.sub(&quot;[^a-zA-Z?.!]+&quot;. &quot; &quot;, w) ex_str = ex_str.strip() print(ex_str) . Identifiers * | . | + | ? | [] | 1 | .* | .+ | .? 10. | |",
-            "url": "https://jsrcodes.github.io/mlidiot/python/2021/03/10/common-regex.html",
+            "url": "https://jsrcodes.github.io/mlbrownies/python/2021/03/10/common-regex.html",
             "relUrl": "/python/2021/03/10/common-regex.html",
             "date": " • Mar 10, 2021"
         }
@@ -26,7 +26,7 @@
         ,"post2": {
             "title": "Tokenizing",
             "content": "creating a space between a word and the punctuation following it 1. |",
-            "url": "https://jsrcodes.github.io/mlidiot/deep%20learning/2021/03/10/tokenizing.html",
+            "url": "https://jsrcodes.github.io/mlbrownies/deep%20learning/2021/03/10/tokenizing.html",
             "relUrl": "/deep%20learning/2021/03/10/tokenizing.html",
             "date": " • Mar 10, 2021"
         }
@@ -37,7 +37,7 @@
         ,"post3": {
             "title": "Neural Machine Translation using Encoder-Decoder",
             "content": "Vectorize words (or characters if you are working on character sequences) to encode into numerical respresentation. The training data usually has pairs of source and target sequences $&lt;S, T&gt;$ ordered by time step and grouped into batches. | Feeding input sequences in a reversed order would help improve training as that will make beginning of sentence to be fed last to the encoder, but that would be first the decoder needs to translate. Note that only the source (for example, Engish sentence) sequences are reversed but the target sequences (for example, French) are fed in their natural order. | Rather than having a simple one-hot encoding representation for the words, it would be a great uplift for the model if we add an embedding layer that projects words into a low-dimensional space that retains semantic properties of the language. For instance, the words “King”, “Queen” would lie closer in the emdedding space. | The input embeddings are then fed into encoder, which is typically from a class of RNNs. | The final state outputted from the encoder is fed as input to the decoder net. In addition to the encoder’s output state, target sequences are fed to the decoder. The decoder will output a score for each word in the target vocabulary, which is converted into a porbability by a softmax layer. Since the probabilities are generated for the entire target language vocabulary, the word with the highest probability is considered. | It might have popped up in your head that how the decoder works during inference time since the targets will not be available. Well, that is a good question to ask. At the time of inference, the decoder is fed with previously predicted word at each time step and with ”&lt;SOS&gt;” at the first step. So, at $t_0$ we feed “&lt;SOS&gt;”, at $t_1$ we feed output of $t_0$ as input, and so on.. | So far so good. But, the output and input sequence may not have same length and can vary across the samples. Masking is one solution which involves cropping extra words after a certain length. It leads to incomplete translations and not advisable. The better alternative for handling variable sequence lengths is to sentences into buckets with each bucket holding sentences of similar sizes (eg., a bucket for sentences u to 6 words, another one having sentences from 7 to 15 words). Then apply padding (fill gaps with special tokens such as &lt;pad&gt;) in each bucket so that all sequences in a bucket have same length. | It is not efficient to output probabilities for all the words in the vocabulary, instead employ a sampling approach. Sample softmax loss can be employed during training. | TrainingSampler and ScheduledEmbeddingTrainingSample are available in Tensorflow Addons. . | What is a TimeDistributed layer in keras? . | Dimesions in a RNN layer Weights: $W_x$ for inputs and $W_y$ for outputs of the previous time step | $Input$ $(batch, num_steps, feature_dimensions$) . $W_{xh}$ | $(feature_dimensions,hidden)$ | . $Hidden$ | $(batch, hidden)$ | . $W_{hh}$ | $(hidden,hidden)$ | . $W_{hq}$ | $(hidden,output)$ | . $Output$ | $(batch,output)$ | . How can a RNN handle variable length sequences? . | How many parameters does an RNN need to learn? . | How can we improve training time? . | How to improve covergence of an RNN model? . |",
-            "url": "https://jsrcodes.github.io/mlidiot/deep%20learning/2021/03/10/seq2seq-nmt.html",
+            "url": "https://jsrcodes.github.io/mlbrownies/deep%20learning/2021/03/10/seq2seq-nmt.html",
             "relUrl": "/deep%20learning/2021/03/10/seq2seq-nmt.html",
             "date": " • Mar 10, 2021"
         }
@@ -48,7 +48,7 @@
         ,"post4": {
             "title": "Decorators in Python",
             "content": "",
-            "url": "https://jsrcodes.github.io/mlidiot/python/2021/03/09/python-decorators-ds.html",
+            "url": "https://jsrcodes.github.io/mlbrownies/python/2021/03/09/python-decorators-ds.html",
             "relUrl": "/python/2021/03/09/python-decorators-ds.html",
             "date": " • Mar 9, 2021"
         }
@@ -59,7 +59,7 @@
         ,"post5": {
             "title": "Recurrent Neural Networks - FAQs",
             "content": "What is the purpose of having a recurrent kernel (sort of an internal loop) in RNN? | RNNs are primarily applied on sequential datasets such as time series, natural language etc. The key property for such datasets is having a state at each time step. This means that we can’t shuffle the data for training since that would break the stateful property of the data. So, the model architecture should align it’s training and inference steps to appropriately learn the data. . What is a stateful RNN? How is it different? . | What is a TimeDistributed layer in keras? . | Dimesions in a RNN layer Weights: $W_x$ for inputs and $W_y$ for outputs of the previous time step . | $Input$ $(batch, num_steps, feature_dimensions$) . $W_{xh}$ | $(feature_dimensions,hidden)$ | . $Hidden$ | $(batch, hidden)$ | . $W_{hh}$ | $(hidden,hidden)$ | . $W_{hq}$ | $(hidden,output)$ | . $Output$ | $(batch,output)$ | . How can a RNN handle variable length sequences? . | How many parameters does an RNN need to learn? . | How can we improve training time? . | How to improve covergence of an RNN model? | Bidirectional RNNs Simply put, a birectional RNN is a stack of two identical RNNs with each of them learning sequences in exactly opposite directions. The outputs from the two RNNs are then concatenated and resulted as main output. The advantage of doing so is that the model can learn context of the input sequence from both directions so it can generate accurate predictions. Note that a bidirection RNN will output double number of scores than it’s underlying RNN’s output size. 2. |",
-            "url": "https://jsrcodes.github.io/mlidiot/deep%20learning/2021/03/09/rnn-faqs.html",
+            "url": "https://jsrcodes.github.io/mlbrownies/deep%20learning/2021/03/09/rnn-faqs.html",
             "relUrl": "/deep%20learning/2021/03/09/rnn-faqs.html",
             "date": " • Mar 9, 2021"
         }
@@ -74,7 +74,7 @@
       ,"page1": {
           "title": "About Me",
           "content": "I am quant developer transitioned into a Machine Learning engineer! Over past 8 years, I coded using C++ (my favorite!), Java, Python, Javascript (react.js/node.js stack) primarily in investment banking domain. Lately, I have developed great interest in NLP, Computer vision and working on some side projects in those areas. I am amazed by the impact of Deep Learning especially in the fields such as Health care, Autonomous driving. .",
-          "url": "https://jsrcodes.github.io/mlidiot/about/",
+          "url": "https://jsrcodes.github.io/mlbrownies/about/",
           "relUrl": "/about/",
           "date": ""
       }
@@ -106,7 +106,7 @@
       ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
-          "url": "https://jsrcodes.github.io/mlidiot/robots.txt",
+          "url": "https://jsrcodes.github.io/mlbrownies/robots.txt",
           "relUrl": "/robots.txt",
           "date": ""
       }
