@@ -1,3 +1,13 @@
+---
+title: Things I frequently use in Tensorflow
+toc: true
+comments: true
+layout: post
+description: Tensorflow utilities
+categories: [Python]
+---
+
+## Tensorflow's most powerful tools for Deep Learning
 
 
 ```python
