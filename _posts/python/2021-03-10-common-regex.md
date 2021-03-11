@@ -10,17 +10,19 @@ categories: [Python]
 ## Commonly used regex for data preprocessing
 
 1.  Adding a space before a punctuation if it is not already spaced.
-   ```python
-   import re
 
-   ex_str = 'This house is very old.'
-   ex_str = re.sub(r"([?.!,])", r" \1 ", ex_str)
-   ex_str = re.sub(r'[" "]+', " ", ex_str)
-   ex_str = re.sub("[^a-zA-Z?.!]+". " ", w)
-   ex_str = ex_str.strip()
-   print(ex_str)
-   ```
-1.  Identifiers
+```python
+import re
+
+ex_str = 'This house is very old.'
+ex_str = re.sub(r"([?.!,])", r" \1 ", ex_str)
+ex_str = re.sub(r'[" "]+', " ", ex_str)
+ex_str = re.sub("[^a-zA-Z?.!]+". " ", w)
+ex_str = ex_str.strip()
+print(ex_str)
+```
+
+2.  Identifiers
     1.  `*`
     2.  `.`
     3.  `+`

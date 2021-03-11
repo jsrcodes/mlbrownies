@@ -23,10 +23,15 @@
 //     font-family: 'Roboto Mono', monospace !important;
 // }
 
-// .page-content {
-//     font-family: 'Roboto', sans-serif;
-// }
-
+ .page-content {
+    font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important;
+    font-size: 17.5px;
+ }
+// make non-headings slightly lighter
+.post-content p, .post-content li {
+    font-size: 17.5px;
+    color: #282a36;;
+ }
 // .site-footer {
 //     font-family: 'IBM Plex Mono', monospace;
 //     border: none;
