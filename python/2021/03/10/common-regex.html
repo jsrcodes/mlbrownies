@@ -115,18 +115,19 @@ window.onload = wrap_img;
 <a class="anchor" href="#commonly-used-regex-for-data-preprocessing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commonly used regex for data preprocessing</h2>
 
 <ol>
-  <li>Adding a space before a punctuation if it is not already spaced.
-   ```python
-   import re</li>
+  <li>Adding a space before a punctuation if it is not already spaced.</li>
 </ol>
 
-<p>ex_str = ‘This house is very old.’
-   ex_str = re.sub(r”([?.!,])”, r” \1 “, ex_str)
-   ex_str = re.sub(r’[” “]+’, “ “, ex_str)
-   ex_str = re.sub(“[^a-zA-Z?.!]+”. “ “, w)
-   ex_str = ex_str.strip()
-   print(ex_str)
-   ```</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="n">ex_str</span> <span class="o">=</span> <span class="s">'This house is very old.'</span>
+<span class="n">ex_str</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r"([?.!,])"</span><span class="p">,</span> <span class="s">r" \1 "</span><span class="p">,</span> <span class="n">ex_str</span><span class="p">)</span>
+<span class="n">ex_str</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r'[" "]+'</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="n">ex_str</span><span class="p">)</span>
+<span class="n">ex_str</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="s">"[^a-zA-Z?.!]+"</span><span class="p">.</span> <span class="s">" "</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+<span class="n">ex_str</span> <span class="o">=</span> <span class="n">ex_str</span><span class="p">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">ex_str</span><span class="p">)</span>
+</code></pre></div></div>
+
 <ol>
   <li>Identifiers
     <ol>

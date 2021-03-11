@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Hello world! for Regex",
-            "content": "Commonly used regex for data preprocessing . Adding a space before a punctuation if it is not already spaced. python import re | ex_str = ‘This house is very old.’ ex_str = re.sub(r”([?.!,])”, r” 1 “, ex_str) ex_str = re.sub(r’[” “]+’, “ “, ex_str) ex_str = re.sub(“[^a-zA-Z?.!]+”. “ “, w) ex_str = ex_str.strip() print(ex_str) . Identifiers * | . | + | ? | [] | 1 | .* | .+ | .? 10. | |",
+            "content": "Commonly used regex for data preprocessing . Adding a space before a punctuation if it is not already spaced. | import re ex_str = &#39;This house is very old.&#39; ex_str = re.sub(r&quot;([?.!,])&quot;, r&quot; 1 &quot;, ex_str) ex_str = re.sub(r&#39;[&quot; &quot;]+&#39;, &quot; &quot;, ex_str) ex_str = re.sub(&quot;[^a-zA-Z?.!]+&quot;. &quot; &quot;, w) ex_str = ex_str.strip() print(ex_str) . Identifiers * | . | + | ? | [] | 1 | .* | .+ | .? 10. | |",
             "url": "https://jsrcodes.github.io/mlidiot/python/2021/03/10/common-regex.html",
             "relUrl": "/python/2021/03/10/common-regex.html",
             "date": " • Mar 10, 2021"
