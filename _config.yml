@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Machine Learning Idiot
-description: My journey through ML Engineering
+title: Machine Learning Brownies
+description: Brownies that may help your cravings to learn ML Engineering
 github_username: jsrcodes
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "mlbrownies"

@@ -9,7 +9,7 @@ categories: [Python]
 
 ## Commonly used regex for data preprocessing
 
-1.  Adding a space before a punctuation if it is not already spaced.
+Adding a space before a punctuation if it is not already spaced.
 
 ```python
 import re
@@ -22,7 +22,7 @@ ex_str = ex_str.strip()
 print(ex_str)
 ```
 
-2.  Identifiers
+1.  Identifiers
     1.  `*`
     2.  `.`
     3.  `+`
