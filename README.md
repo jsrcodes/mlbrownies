@@ -8,7 +8,7 @@
 
 https://jsrcodes.github.io/mlbrownies/
 
-# A blog on Machine Learning Engineering
+# Machine Learning Engineering Brownies!
 
 <!-- _powered by [fastpages](https://github.com/fastai/fastpages)_ -->
 
