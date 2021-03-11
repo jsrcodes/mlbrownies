@@ -1,3 +1,3 @@
-https://jayasimhareddy.github.io/mlidiot/
+https://jsrcodes.github.io/mlidiot/
 
 # Machine Learning Idiot

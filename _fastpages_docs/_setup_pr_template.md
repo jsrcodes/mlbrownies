@@ -1,32 +1,32 @@
-Hello :wave: @jayasimhareddy!  Thank you for using fastpages!  
+Hello :wave: @jsrcodes!  Thank you for using fastpages!
 
 ## Before you merge this PR
 
 1. Create an ssh key-pair.  Open <a href="https://8gwifi.org/sshfunctions.jsp" target="_blank">this utility</a>. Select: `RSA` and `4096` and leave `Passphrase` blank.  Click the blue button `Generate-SSH-Keys`.
 
-2. Navigate to <a href="https://github.com/jayasimhareddy/mlidiot/settings/secrets" target="_blank">this link</a> and click `New repository secret`.  Copy and paste the **Private Key** into the `Value` field. This includes the "---BEGIN RSA PRIVATE KEY---" and "--END RSA PRIVATE KEY---" portions. **In the `Name` field, name the secret `SSH_DEPLOY_KEY`.**
+2. Navigate to <a href="https://github.com/jsrcodes/mlidiot/settings/secrets" target="_blank">this link</a> and click `New repository secret`.  Copy and paste the **Private Key** into the `Value` field. This includes the "---BEGIN RSA PRIVATE KEY---" and "--END RSA PRIVATE KEY---" portions. **In the `Name` field, name the secret `SSH_DEPLOY_KEY`.**
 
-3. Navigate to <a href="https://github.com/jayasimhareddy/mlidiot/settings/keys" target="_blank">this link</a> and click the `Add deploy key` button.  Paste your **Public Key** from step 1 into the `Key` box.  In the `Title`, name the key anything you want, for example `fastpages-key`.  Finally, **make sure you click the checkbox next to `Allow write access`** (pictured below), and click `Add key` to save the key.
+3. Navigate to <a href="https://github.com/jsrcodes/mlidiot/settings/keys" target="_blank">this link</a> and click the `Add deploy key` button.  Paste your **Public Key** from step 1 into the `Key` box.  In the `Title`, name the key anything you want, for example `fastpages-key`.  Finally, **make sure you click the checkbox next to `Allow write access`** (pictured below), and click `Add key` to save the key.
 
 ![](https://raw.githubusercontent.com/fastai/fastpages/master/_fastpages_docs/_checkbox.png)
 
 
 ### What to Expect After Merging This PR
 
-- GitHub Actions will build your site, which will take 2-3 minutes to complete.  **This will happen anytime you push changes to the master branch of your repository.**  You can monitor the logs of this if you like on the [Actions tab of your repo](https://github.com/jayasimhareddy/mlidiot/actions).
+- GitHub Actions will build your site, which will take 2-3 minutes to complete.  **This will happen anytime you push changes to the master branch of your repository.**  You can monitor the logs of this if you like on the [Actions tab of your repo](https://github.com/jsrcodes/mlidiot/actions).
 - Your GH-Pages Status badge on your README will eventually appear and be green, indicating your first successful build.
-- You can monitor the status of your site in the GitHub Pages section of your [repository settings](https://github.com/jayasimhareddy/mlidiot/settings).
+- You can monitor the status of your site in the GitHub Pages section of your [repository settings](https://github.com/jsrcodes/mlidiot/settings).
 
-If you are not using a custom domain, your website will appear at: 
+If you are not using a custom domain, your website will appear at:
 
-#### https://jayasimhareddy.github.io/mlidiot
+#### https://jsrcodes.github.io/mlidiot
 
 
 ## Optional: Using a Custom Domain
 
-1. After merging this PR, add a file named `CNAME` at the root of your repo.  For example, the `fastpages` blog is hosted at `https://fastpages.fast.ai`, which means [our CNAME](https://github.com/fastai/fastpages/blob/master/CNAME) contains the following contents: 
+1. After merging this PR, add a file named `CNAME` at the root of your repo.  For example, the `fastpages` blog is hosted at `https://fastpages.fast.ai`, which means [our CNAME](https://github.com/fastai/fastpages/blob/master/CNAME) contains the following contents:
 
-        
+
     >`fastpages.fast.ai`
 
 
