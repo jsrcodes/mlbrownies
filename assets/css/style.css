@@ -462,15 +462,7 @@ canvas { filter: invert(100%); }
 
 li .post-meta-description { color: rgba(255, 255, 255, 0.69) !important; }
 
-.site-header { font-family: 'IBM Plex Mono', monospace; border: none; }
-
 .site-header a:hover { color: rgba(255, 255, 255, 0.69) !important; text-decoration: none !important; }
-
-.home { font-family: 'Roboto Mono', monospace !important; }
-
-.page-content { font-family: 'Roboto', sans-serif; }
-
-.site-footer { font-family: 'IBM Plex Mono', monospace; border: none; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
